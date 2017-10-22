@@ -1,0 +1,49 @@
+/*aplicando selector de etiqueta*/
+body{
+  font-family: sans-serif;
+}
+nav{
+  /*ayuda a visualizar si es block o inline*/
+  /*outline: 1px solid red;*/
+}
+/*lista*/
+ul{
+  /*outline: 1px solid blue;*/
+  /*quitar las viñetas*/
+  list-style: none;
+  /*quitar espacio de lado izquierdo  para que este a la altura del titulo*/
+  margin: 0;
+  padding: 0;
+  /*color de fondo*/
+  background: #2e2e2a;
+  /*espacio de cada item*/
+  line-height: 40px;
+  /*le devuelve al elemento contenedor para que vuelva a ser bloque*/
+  overflow: auto;
+
+}
+/*item de cada lista*/
+li{
+  /*outline: 1px solid green;*/
+  width: 100px;
+  /*la lista se posiciona en una linea pero sigue en bloque*/
+  /*display: inline-block;*/
+  text-align: center;
+  /*sale del contenedor y no se ve, se debe de incorporar overflow*/
+  float:left;
+}
+
+a{
+  /*outline: 1px solid purple;*/
+  /*quitando el subrayado*/
+  text-decoration: none;
+  /*ocupa el espacio de la etiqueta padre*/
+  display: block;
+  color: #fff;
+
+}
+/*cuando se posiciona el cursor el color del fondo y letra cambia*/
+a:hover{
+  background: #f9a91a;
+  color: #000;
+}
